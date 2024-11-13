@@ -1,0 +1,96 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+.swiper-slide-hero {
+  position: relative;
+}
+.swiper-hero-word {
+  position: absolute;
+  top: 3rem;
+  left: 20%;
+  width: 25%;
+}
+/* Initial state */
+.hero-word-1,
+.hero-word-2,
+.hero-word-3 {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+/* Active state */
+.active {
+  opacity: 1;
+  transform: scale(1);
+}

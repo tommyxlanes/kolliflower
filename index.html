@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide swiper-slide-hero" id="hero-1">
+          <img
+            class="swiper-hero-word hero-word-1"
+            src="images/boom.png"
+            alt="boom" />
+          <img src="images/hero-1.jpg" alt="hero-1" />
+        </div>
+        <div class="swiper-slide swiper-slide-hero" id="hero-2">
+          <img
+            class="swiper-hero-word hero-word-2"
+            src="images/boom.png"
+            alt="boom" />
+          <img src="images/hero-2.jpg" alt="hero-2" />
+        </div>
+        <div class="swiper-slide swiper-slide-hero" id="hero-3">
+          <img
+            class="swiper-hero-word hero-word-3"
+            src="images/boom.png"
+            alt="boom" />
+          <img src="images/hero-3.jpg" alt="hero-3" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <section
+      style="
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      ">
+      <h3 style="font-size: 3rem">Kolliflower</h3>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
